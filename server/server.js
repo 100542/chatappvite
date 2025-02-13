@@ -20,11 +20,7 @@ app.get('/', (req, res) => {
 });
 
 io.on('connection', (socket) => {
-  console.log('A user connected');
-
-  socket.on('disconnect', () => {
-    console.log('User disconnected');
-  });
+  console.log('New user connected with ID:', socket.id);
 });
 
 server.listen(8080, () => {
