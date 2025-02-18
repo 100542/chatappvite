@@ -1,26 +1,10 @@
-import { useEffect } from "react";
 import "./App.css";
-import axios from "axios";
-import { io } from "socket.io-client";
 import { Routes, Route } from "react-router-dom";
 import Waves from "./components/Background";
 import Index from "./components/Index";
 import Network from "./components/Network";
 
 function App() {
-  const fetchAPI = async () => {
-    await axios.get("http://localhost:8080");
-  };
-
-  useEffect(() => {
-    fetchAPI();
-
-    const socket = io("http://localhost:8080");
-
-    return () => {
-      socket.close();
-    };
-  }, []);
 
   return (
     <>
