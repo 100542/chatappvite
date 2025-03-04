@@ -12,9 +12,9 @@ export default function Index() {
              Aurelia Enterprises
             </h1>
             <p className="font-light text-md text-center lg:text-center lg:text-xl mt-2 [text-shadow:_0_2px_4px_rgba(0,0,0,0.2)]">
-              Your hub for the management of finances & networking.
+              Your local marketplaces found from the comfort of your home.
             </p>
-            <Link to="/network"><button className="mt-8 p-4 w-52 bg-[#E1C09D] hover:bg-[#ffd2a2] duration-300 hover:scale-110 hover:cursor-pointer rounded-md shadow-md font-bold text-2xl">Clock In</button></Link>
+            <Link to="/network"><button className="mt-8 p-4 w-52 bg-[#E1C09D] hover:bg-[#ffd2a2] duration-300 hover:scale-110 hover:cursor-pointer rounded-md shadow-md font-bold text-2xl">Connect</button></Link>
           </div>
         </div>
       </div>

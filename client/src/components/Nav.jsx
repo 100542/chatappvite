@@ -56,18 +56,24 @@ export default function NavBar() {
             <CloseIcon className="cursor-pointer" fontSize="large" onClick={() => setMenuOpen(false)} />
           </div>
           <nav className="mt-10 flex flex-col gap-6 text-xl font-light">
+            <Link to={"/"}>
             <p className="flex items-center cursor-pointer" onClick={() => setMenuOpen(false)}>
               <CottageOutlinedIcon />
               <span className="ml-3">Home</span>
             </p>
+            </Link>
+            <Link to={'/'}>
             <p className="flex items-center cursor-pointer" onClick={() => setMenuOpen(false)}>
               <InfoOutlinedIcon />
               <span className="ml-3">About</span>
             </p>
+            </Link>
+            <Link to={'/network'}>
             <p className="flex items-center cursor-pointer" onClick={() => setMenuOpen(false)}>
               <ChatOutlinedIcon />
               <span className="ml-3">Network</span>
             </p>
+            </Link>
           </nav>
         </div>
       </div>
